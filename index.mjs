@@ -1,7 +1,7 @@
 import {log} from './log.mjs';
 
 export const handler = async (event) => {
-    log('Log de execução depois do github actions event: ' + JSON.stringify(event));
+    log('event: ' + JSON.stringify(event));
 
     return {
         statusCode: 200,
