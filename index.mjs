@@ -5,6 +5,9 @@ export const handler = async (event) => {
 
     return {
         statusCode: 200,
-        body: JSON.stringify('Hello from Lambda!'),
+        body: `<html><body>Dados da requisicao ${JSON.stringify(event)}</body></html>`,
+        headers: {
+            "content-type": "text/html"
+        }
       };
   };
